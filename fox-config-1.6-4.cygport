@@ -1,0 +1,20 @@
+DESCRIPTION="Wrapper script for fox-config scripts"
+HOMEPAGE="http://www.gentoo.org/"  # I originally wrote this for gentoo
+SRC_URI="http://www.gentoo.org/cgi-bin/viewcvs.cgi/*checkout*/x11-libs/fox-wrapper/files/fox-wrapper-1.sh"
+SRC_DIR=.
+
+CYGPORT_DEPEND=0.2.0
+
+src_compile() {
+	:
+}
+
+src_test() {
+	:
+}
+
+src_install() {
+	cd ${S}
+	exeinto /usr/share/autotools
+	newexe fox-wrapper-1.sh fox-wrapper.sh
+}

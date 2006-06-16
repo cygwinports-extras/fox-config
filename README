@@ -1,0 +1,56 @@
+fox-config
+------------------------------------------
+Wrapper script for autoconf commands.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  bash
+  fox12-devel
+  fox14-devel
+  fox16-devel
+
+Build requirements:
+  cygwin-1.5.19-4
+  cygport-0.2.0-1
+
+Canonical website:
+  http://www.gentoo.org/
+
+Canonical download:
+  http://www.gentoo.org/cgi-bin/viewcvs.cgi/sys-devel/fox-wrapper/files/
+
+-------------------------------------------
+
+Build instructions:
+  unpack fox-config-1.6-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./fox-config-1.6-X.cygport all
+
+This will create:
+  /usr/src/fox-config-1.6-X-src.tar.bz2
+  /usr/src/fox-config-1.6-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/fox-config.sh
+  /etc/preremove/fox-config.sh
+  /usr/share/autotools/fox-wrapper.sh
+  /usr/share/doc/Cygwin/fox-config-1.6.README
+
+------------------
+
+Port Notes:
+
+----- version 1.6-4 -----
+Fixed postinstall and preremove scripts.
+
+----- version 1.6-3 -----
+Rebuilt as a cygport package.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
