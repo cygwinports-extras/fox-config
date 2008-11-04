@@ -1,4 +1,4 @@
 category: Devel
-requires: bash fox12-devel fox14-devel fox16-devel
+requires: bash
 sdesc: "Wrapper scripts for fox-config scripts"
 ldesc: "Wrapper scripts for fox-config scripts"

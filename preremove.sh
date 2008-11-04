@@ -3,4 +3,4 @@ prog=fox-config
 
 cd ${bindir}
 
-rm -f ${prog}
+/usr/bin/rm -f ${prog}

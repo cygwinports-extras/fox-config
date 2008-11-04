@@ -3,21 +3,17 @@ fox-config
 Wrapper script for autoconf commands.
 
 Runtime requirements:
-  cygwin-1.5.19-4
   bash
-  fox12-devel
-  fox14-devel
-  fox16-devel
+  libFOX*-devel
 
 Build requirements:
-  cygwin-1.5.19-4
-  cygport-0.2.0-1
+  cygport-0.4.2-1
 
 Canonical website:
   http://www.gentoo.org/
 
 Canonical download:
-  http://www.gentoo.org/cgi-bin/viewcvs.cgi/sys-devel/fox-wrapper/files/
+  http://sources.gentoo.org/cgi-bin/viewcvs.py/gentoo-x86/x11-libs/fox-wrapper/files/
 
 -------------------------------------------
 
@@ -44,6 +40,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.6-5 -----
+Update to wrapper version 2.
 
 ----- version 1.6-4 -----
 Fixed postinstall and preremove scripts.

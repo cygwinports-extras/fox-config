@@ -1,0 +1,23 @@
+Changes for differences in packaging between Cygwin and Gentoo
+
+--- origsrc/fox-wrapper-2.sh	2008-11-04 12:59:33.506241300 -0600
++++ src/fox-wrapper-2.sh	2008-11-04 13:02:33.771866300 -0600
+@@ -28,7 +28,7 @@
+ fi
+ 
+ for v in ${vers} ; do
+-	eval binary_${v/./_}="fox-${v}-config"
++	eval binary_${v/./_}="fox-config-${v}"
+ done
+ 
+ #
+@@ -68,8 +68,7 @@
+ #
+ if [ ! -x "${bindir}/${binary}" ] ; then
+ 	echo "fox-wrapper: $binary is missing or not executable." >&2
+-	echo "             Please try emerging the correct version of fox, i.e.:" >&2
+-	echo "             emerge '=x11-libs/${binary/-config/}*'" >&2
++	echo "             Please try installing libFOX${v}-devel" >&2
+ 	exit 1
+ fi
+ 

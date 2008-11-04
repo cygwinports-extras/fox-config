@@ -4,5 +4,5 @@ wrapper=/usr/share/autotools/fox-wrapper.sh
 
 cd ${bindir}
 
-rm -f ${prog}
-ln -sfn ${wrapper} ${prog}
+/usr/bin/rm -f ${prog}
+/usr/bin/ln -sfn ${wrapper} ${prog}
